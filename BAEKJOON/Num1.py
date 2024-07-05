@@ -1,0 +1,1 @@
+print("Hello World!") #출력은 print C와 동일하다.
