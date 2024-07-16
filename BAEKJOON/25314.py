@@ -35,8 +35,10 @@ long long long long long int
 
 N = int(input('혜아가 저장하려고 생각하는 바이트 수 : '))
 
-for i in range(int(N / 4)):
-    print("long", end = " ")    #end옵션을 사용하면 그 뒤의 출력값과 이어서 출력한다. (즉, 줄바꿈을 하지 않게 된다.)
-print("int")                    #print("I like", end=" ")
-                                #print("money")
-                                #출력 >>>>> I like money
+for i in range(int(N // 4)):
+    print("long ", end ="")    #end옵션을 사용하면 그 뒤의 출력값과 이어서 출력한다. (즉, 줄바꿈을 하지 않게 된다.)
+print("int")                        #print("I like", end=" ")
+                                    #print("money")
+                                    #출력 >>>>> I like money
+
+print("long " * (N // 4) + "int")
